@@ -50,7 +50,7 @@ We welcome contributions from developers of all skill levels. If you'd like to c
 <!-- LICENSE -->
 ## License
 
-Distributed under the [License Name] License. See `LICENSE` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
