@@ -1,4 +1,3 @@
-// FILEPATH: /Users/amandanatallie/Development/Estudos/nextjs-ai-shadcn-ui/app/page.test.tsx
 import { render, screen, act } from '@testing-library/react';
 import Page from '../app/page';
 
