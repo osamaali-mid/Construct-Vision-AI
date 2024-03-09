@@ -9,7 +9,7 @@
     "lint": "eslint app --ext js,ts,tsx",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "test": "jest",
+    "test": "jest --silent --maxWorkers=50%",
     "test:watch": "jest --watch",
     "coverage": "jest --coverage --silent --maxWorkers=50%",
     "test:e2e": "playwright test",

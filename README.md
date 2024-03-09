@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- PROJECT BANNER -->
+<p align="center">
+  <img src="public/logo.png" alt="Project Name" width="300px">
+</p>
 
-## Getting Started
+<!-- PROJECT TITLE -->
+<h1 align="center">IdentityIQ</h1>
 
-First, run the development server:
+<!-- PROJECT DESCRIPTION -->
+<p align="center">A modern and innovative AI-Powered Next.js 14 Web App with People Detection & Recording | using ShadcnUI, leveraging the power of NEXT JS, Typescript, and more.</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<!-- TECHNOLOGIES USED -->
+## Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Frontend
+- **NEXT JS**: Crafting blazing-fast and dynamic web applications.
+- **Typescript**: Adding type safety and enhanced developer experience.
+- **Tailwind CSS**: Styling the project with minimalistic and elegant designs.
+- **Shadcn-UI**: Elevating the UI with stunning components and seamless integration.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Testing and Quality Assurance
+- **Playwright**: Automating browser testing with ease and efficiency.
+- **Jest**: Ensuring robustness and reliability with comprehensive testing.
+- **Eslint**: Enforcing code consistency and cleanliness for maintainability.
+- **Prettier**: Keeping the codebase neat and organized with automatic formatting.
+- **Husky**: Streamlining the development process with pre-commit hooks.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<!-- INSTALLATION -->
+## Installation
 
-## Learn More
+Follow these simple steps to get started with the project:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**: `git clone <repository-url>`
+2. **Install dependencies**: `npm install`
+3. **Start the development server**: `npm run dev`
+4. **Explore the project**: Visit `localhost:3000` in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- CONTRIBUTING -->
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+We welcome contributions from developers of all skill levels. If you'd like to contribute, follow these steps:
 
-## Deploy on Vercel
+1. **Fork** the repository on GitHub.
+2. **Clone** the forked repository to your local machine.
+3. **Create** a new branch for your feature: `git checkout -b feature-name`
+4. **Commit** your changes: `git commit -am 'Add new feature'`
+5. **Push** your changes to your fork: `git push origin feature-name`
+6. **Submit** a pull request from your fork's branch to our `main` branch.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<!-- LICENSE -->
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Distributed under the [License Name] License. See `LICENSE` for more information.
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+
+Special thanks to the creators and maintainers of the incredible technologies and tools powering this project. Your innovation and dedication make projects like this possible.
+
+<!-- CONTACT -->
+## Contact
+
+Have any questions or suggestions? Feel free to reach out to us:
+
+- Email: amanda@vallorisolutions.com
