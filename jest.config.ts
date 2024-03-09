@@ -6,6 +6,9 @@ const createJestConfig = nextJest({
 });
 
 const config: Config = {
+  clearMocks: true,
+  roots: ['<rootDir>/app'],
+  testRegex: '((\\.|/*.)(test))\\.[tj]sx?$',
   coverageProvider: 'v8',
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
