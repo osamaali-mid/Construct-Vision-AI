@@ -13,7 +13,6 @@
     "test:watch": "jest --watch",
     "coverage": "jest --coverage --silent --maxWorkers=50%",
     "test:e2e": "playwright test",
-    "test:e2e:ci": "start-server-and-test dev http://localhost:3000 test:e2e",
     "show-e2e-report": "playwright show-report"
   },
   "dependencies": {
@@ -49,7 +48,6 @@
     "postcss": "^8",
     "prettier": "^3.2.5",
     "pretty-quick": "^4.0.0",
-    "start-server-and-test": "^2.0.3",
     "tailwindcss": "^3.3.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.0.4"

@@ -97,9 +97,6 @@ devDependencies:
   pretty-quick:
     specifier: ^4.0.0
     version: 4.0.0(prettier@3.2.5)
-  start-server-and-test:
-    specifier: ^2.0.3
-    version: 2.0.3
   tailwindcss:
     specifier: ^3.3.0
     version: 3.4.1(ts-node@10.9.2)
@@ -842,22 +839,6 @@ packages:
     engines: { node: ^12.22.0 || ^14.17.0 || >=16.0.0 }
     dev: true
 
-  /@hapi/hoek@9.3.0:
-    resolution:
-      {
-        integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==,
-      }
-    dev: true
-
-  /@hapi/topo@5.1.0:
-    resolution:
-      {
-        integrity: sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==,
-      }
-    dependencies:
-      '@hapi/hoek': 9.3.0
-    dev: true
-
   /@humanwhocodes/config-array@0.11.14:
     resolution:
       {
@@ -1438,29 +1419,6 @@ packages:
     resolution:
       {
         integrity: sha512-RbhOOTCNoCrbfkRyoXODZp75MlpiHMgbE5MEBZAnnnLyQNgrigEj4p0lzsMDyc1zVsJDLrivB58tgg3emX0eEA==,
-      }
-    dev: true
-
-  /@sideway/address@4.1.5:
-    resolution:
-      {
-        integrity: sha512-IqO/DUQHUkPeixNQ8n0JA6102hT9CmaljNTPmQ1u8MEhBo/R4Q8eKLN/vGZxuebwOroDB4cbpjheD4+/sKFK4Q==,
-      }
-    dependencies:
-      '@hapi/hoek': 9.3.0
-    dev: true
-
-  /@sideway/formula@3.0.1:
-    resolution:
-      {
-        integrity: sha512-/poHZJJVjx3L+zVD6g9KgHfYnb443oi7wLu/XKojDviHy6HOEOA6z1Trk5aR1dGcmPenJEgb2sK2I80LeS3MIg==,
-      }
-    dev: true
-
-  /@sideway/pinpoint@2.0.0:
-    resolution:
-      {
-        integrity: sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==,
       }
     dev: true
 
@@ -2294,19 +2252,6 @@ packages:
     engines: { node: '>=4' }
     dev: true
 
-  /axios@1.6.7(debug@4.3.4):
-    resolution:
-      {
-        integrity: sha512-/hDJGff6/c7u0hDkvkGxR/oy6CbCs8ziCsC7SqmhjfozqiJGc8Z11wrv9z9lYfY4K8l+H9TpjcMDX0xOZmx+RA==,
-      }
-    dependencies:
-      follow-redirects: 1.15.5(debug@4.3.4)
-      form-data: 4.0.0
-      proxy-from-env: 1.1.0
-    transitivePeerDependencies:
-      - debug
-    dev: true
-
   /axobject-query@3.2.1:
     resolution:
       {
@@ -2415,13 +2360,6 @@ packages:
         integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==,
       }
     engines: { node: '>=8' }
-
-  /bluebird@3.7.2:
-    resolution:
-      {
-        integrity: sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==,
-      }
-    dev: true
 
   /brace-expansion@1.1.11:
     resolution:
@@ -2587,14 +2525,6 @@ packages:
         integrity: sha512-kWWXztvZ5SBQV+eRgKFeh8q5sLuZY2+8WUIzlxWVTg+oGwY14qylx1KbKzHd8P6ZYkAg0xyIDU9JMHhyJMZ1jw==,
       }
     engines: { node: '>=10' }
-    dev: true
-
-  /check-more-types@2.24.0:
-    resolution:
-      {
-        integrity: sha512-Pj779qHxV2tuapviy1bSZNEL1maXr13bPYpsvSDB68HlYcYuhlDrmGd63i0JHMCLKzc7rUSNIrpdJlhVlNwrxA==,
-      }
-    engines: { node: '>= 0.8.0' }
     dev: true
 
   /chokidar@3.6.0:
@@ -3165,13 +3095,6 @@ packages:
     engines: { node: '>=8' }
     dependencies:
       is-obj: 2.0.0
-    dev: true
-
-  /duplexer@0.1.2:
-    resolution:
-      {
-        integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==,
-      }
     dev: true
 
   /eastasianwidth@0.2.0:
@@ -3762,21 +3685,6 @@ packages:
     engines: { node: '>=0.10.0' }
     dev: true
 
-  /event-stream@3.3.4:
-    resolution:
-      {
-        integrity: sha512-QHpkERcGsR0T7Qm3HNJSyXKEEj8AHNxkY3PK8TS2KJvQ7NiSHe3DDpwVKKtoYprL/AreyzFBeIkBIWChAqn60g==,
-      }
-    dependencies:
-      duplexer: 0.1.2
-      from: 0.1.7
-      map-stream: 0.1.0
-      pause-stream: 0.0.11
-      split: 0.3.3
-      stream-combiner: 0.0.4
-      through: 2.3.8
-    dev: true
-
   /execa@5.1.1:
     resolution:
       {
@@ -3958,21 +3866,6 @@ packages:
       }
     dev: true
 
-  /follow-redirects@1.15.5(debug@4.3.4):
-    resolution:
-      {
-        integrity: sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==,
-      }
-    engines: { node: '>=4.0' }
-    peerDependencies:
-      debug: '*'
-    peerDependenciesMeta:
-      debug:
-        optional: true
-    dependencies:
-      debug: 4.3.4
-    dev: true
-
   /for-each@0.3.3:
     resolution:
       {
@@ -4008,13 +3901,6 @@ packages:
     resolution:
       {
         integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==,
-      }
-    dev: true
-
-  /from@0.1.7:
-    resolution:
-      {
-        integrity: sha512-twe20eF1OxVxp/ML/kq2p1uc6KvFK/+vs8WjEbeKmV2He22MKm7YF2ANIt+EOqhJ5L3K/SuuPhk0hWQDjOM23g==,
       }
     dev: true
 
@@ -5464,19 +5350,6 @@ packages:
       }
     hasBin: true
 
-  /joi@17.12.2:
-    resolution:
-      {
-        integrity: sha512-RonXAIzCiHLc8ss3Ibuz45u28GOsWE1UpfDXLbN/9NKbL4tCJf8TWYVKsoYuuh+sAUt7fsSNpA+r2+TBA6Wjmw==,
-      }
-    dependencies:
-      '@hapi/hoek': 9.3.0
-      '@hapi/topo': 5.1.0
-      '@sideway/address': 4.1.5
-      '@sideway/formula': 3.0.1
-      '@sideway/pinpoint': 2.0.0
-    dev: true
-
   /js-tokens@4.0.0:
     resolution:
       {
@@ -5662,14 +5535,6 @@ packages:
     engines: { node: '>=0.10' }
     dependencies:
       language-subtag-registry: 0.3.22
-    dev: true
-
-  /lazy-ass@1.6.0:
-    resolution:
-      {
-        integrity: sha512-cc8oEVoctTvsFZ/Oje/kGnHbpWHYBe8IAJe4C0QNc3t8uM/0Y8+erSz/7Y1ALuXTEZTMvxXwO6YbX1ey3ujiZw==,
-      }
-    engines: { node: '> 0.8' }
     dev: true
 
   /leven@3.1.0:
@@ -5887,13 +5752,6 @@ packages:
       }
     dependencies:
       tmpl: 1.0.5
-    dev: true
-
-  /map-stream@0.1.0:
-    resolution:
-      {
-        integrity: sha512-CkYQrPYZfWnu/DAmVCpTSX/xHpKZ80eKh2lAkyA6AJTef6bW+6JpbQZN5rofum7da+SyN1bi5ctTm+lTfcCW3g==,
-      }
     dev: true
 
   /meow@12.1.1:
@@ -6479,15 +6337,6 @@ packages:
     engines: { node: '>=8' }
     dev: true
 
-  /pause-stream@0.0.11:
-    resolution:
-      {
-        integrity: sha512-e3FBlXLmN/D1S+zHzanP4E/4Z60oFAa3O051qt1pxa7DEJWKAyil6upYVXCWadEnuoqa4Pkc9oUx9zsxYeRv8A==,
-      }
-    dependencies:
-      through: 2.3.8
-    dev: true
-
   /picocolors@1.0.0:
     resolution:
       {
@@ -6741,24 +6590,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
-    dev: true
-
-  /proxy-from-env@1.1.0:
-    resolution:
-      {
-        integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==,
-      }
-    dev: true
-
-  /ps-tree@1.2.0:
-    resolution:
-      {
-        integrity: sha512-0VnamPPYHl4uaU/nSFeZZpR21QAWRz+sRv4iW9+v/GS/J5U5iZB5BNN6J0RMoOvdx2gWM2+ZFMIm58q24e4UYA==,
-      }
-    engines: { node: '>= 0.10' }
-    hasBin: true
-    dependencies:
-      event-stream: 3.3.4
     dev: true
 
   /psl@1.9.0:
@@ -7026,15 +6857,6 @@ packages:
     dependencies:
       queue-microtask: 1.2.3
 
-  /rxjs@7.8.1:
-    resolution:
-      {
-        integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==,
-      }
-    dependencies:
-      tslib: 2.6.2
-    dev: true
-
   /safe-array-concat@1.1.0:
     resolution:
       {
@@ -7235,15 +7057,6 @@ packages:
     engines: { node: '>= 10.x' }
     dev: true
 
-  /split@0.3.3:
-    resolution:
-      {
-        integrity: sha512-wD2AeVmxXRBoX44wAycgjVpMhvbwdI2aZjCkvfNcH1YqHQvJVa1duWc73OyVGJUc05fhFaTZeQ/PYsrmyH0JVA==,
-      }
-    dependencies:
-      through: 2.3.8
-    dev: true
-
   /sprintf-js@1.0.3:
     resolution:
       {
@@ -7261,26 +7074,6 @@ packages:
       escape-string-regexp: 2.0.0
     dev: true
 
-  /start-server-and-test@2.0.3:
-    resolution:
-      {
-        integrity: sha512-QsVObjfjFZKJE6CS6bSKNwWZCKBG6975/jKRPPGFfFh+yOQglSeGXiNWjzgQNXdphcBI9nXbyso9tPfX4YAUhg==,
-      }
-    engines: { node: '>=16' }
-    hasBin: true
-    dependencies:
-      arg: 5.0.2
-      bluebird: 3.7.2
-      check-more-types: 2.24.0
-      debug: 4.3.4
-      execa: 5.1.1
-      lazy-ass: 1.6.0
-      ps-tree: 1.2.0
-      wait-on: 7.2.0(debug@4.3.4)
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /stop-iteration-iterator@1.0.0:
     resolution:
       {
@@ -7289,15 +7082,6 @@ packages:
     engines: { node: '>= 0.4' }
     dependencies:
       internal-slot: 1.0.7
-    dev: true
-
-  /stream-combiner@0.0.4:
-    resolution:
-      {
-        integrity: sha512-rT00SPnTVyRsaSz5zgSPma/aHSOic5U1prhYdRy5HS2kTZviFpmDgzilbtsJsxiroqACmayynDN/9VzIbX5DOw==,
-      }
-    dependencies:
-      duplexer: 0.1.2
     dev: true
 
   /streamsearch@1.1.0:
@@ -7963,23 +7747,6 @@ packages:
     engines: { node: '>=14' }
     dependencies:
       xml-name-validator: 4.0.0
-    dev: true
-
-  /wait-on@7.2.0(debug@4.3.4):
-    resolution:
-      {
-        integrity: sha512-wCQcHkRazgjG5XoAq9jbTMLpNIjoSlZslrJ2+N9MxDsGEv1HnFoVjOCexL0ESva7Y9cu350j+DWADdk54s4AFQ==,
-      }
-    engines: { node: '>=12.0.0' }
-    hasBin: true
-    dependencies:
-      axios: 1.6.7(debug@4.3.4)
-      joi: 17.12.2
-      lodash: 4.17.21
-      minimist: 1.2.8
-      rxjs: 7.8.1
-    transitivePeerDependencies:
-      - debug
     dev: true
 
   /walker@1.0.8:
