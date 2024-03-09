@@ -1,16 +1,18 @@
-"use client"
-import React, { useRef } from 'react'
-import Webcam from 'react-webcam'
+'use client';
+import React, { useRef } from 'react';
+import Webcam from 'react-webcam';
 
-type Props = {}
+type Props = {};
 
 const HomePage = (props: Props) => {
-
-    const webCamRef = useRef<Webcam>(null)
+  const webCamRef = useRef<Webcam>(null);
 
   return (
-    <Webcam />
-  )
-}
+    <>
+      <h1>HomePage</h1>
+      <Webcam />
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;
