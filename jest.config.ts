@@ -19,6 +19,16 @@ const config: Config = {
       functions: 80,
       statements: 80,
     },
+    '**/*.tsx': {
+      branches: 80,
+      lines: 80,
+      functions: 80,
+      statements: 80,
+    },
+  },
+  collectCoverageFrom: ['<rootDir>/app/**/*.{ts,tsx}', '!<rootDir>/app/**/types.ts'],
+  moduleNameMapper: {
+    '^@/components/(.*)$': '<rootDir>/app/components/ui/$1',
   },
 };
 

@@ -7,12 +7,12 @@ import Link from 'next/link';
 import React, { useRef, useState } from 'react';
 import Webcam from 'react-webcam';
 
-type Props = {};
-
-const HomePage = (props: Props) => {
+const HomePage = () => {
   const webCamRef = useRef<Webcam>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [mirrored, setMirrored] = useState(true);
+
+  const handleToggle = () => setMirrored(!mirrored);
 
   return (
     <div className="flex h-screen w-screen">
@@ -34,6 +34,7 @@ const HomePage = (props: Props) => {
             ref={webCamRef}
             mirrored={mirrored}
             className="h-full w-full object-contain p-2"
+            data-testid="webcam"
           />
           <canvas
             ref={canvasRef}
@@ -47,7 +48,12 @@ const HomePage = (props: Props) => {
         <div className="border-primary/5 border-2 max-w-xs flex flex-col gap-2 justify-between shadow-md rounded-md p-4">
           <div className="flex flex-col gap-2">
             <ThemeToggler />
-            <Button variant="outline" size="icon" onClick={() => setMirrored(!mirrored)}>
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={handleToggle}
+              data-testid="toggle-mirror"
+            >
               <FlipHorizontal />
             </Button>
             <Separator />

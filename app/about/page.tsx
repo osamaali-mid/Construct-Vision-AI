@@ -2,9 +2,7 @@
 import Link from 'next/link';
 import React, { useRef } from 'react';
 
-type Props = {};
-
-const HomePage = (props: Props) => {
+const AboutPage = () => {
   return (
     <>
       <h1>About</h1>
@@ -13,4 +11,4 @@ const HomePage = (props: Props) => {
   );
 };
 
-export default HomePage;
+export default AboutPage;
