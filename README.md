@@ -30,9 +30,9 @@
 
 Follow these simple steps to get started with the project:
 
-1. **Clone the repository**: `git clone <repository-url>`
-2. **Install dependencies**: `npm install`
-3. **Start the development server**: `npm run dev`
+1. **Clone the repository**: `git clone https://github.com/amanda-natallie/nextjs-shadcn-ai-webcam`
+2. **Install dependencies**: `pnpm install`
+3. **Start the development server**: `pnpm run dev`
 4. **Explore the project**: Visit `localhost:3000` in your browser.
 
 <!-- CONTRIBUTING -->
