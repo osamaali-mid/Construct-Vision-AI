@@ -1,0 +1,17 @@
+/config
+/scripts
+/public
+/node_modules
+/coverage
+/build
+/dist
+/styleguide
+/ci/
+/component-test
+/smoke-test
+.history
+pnpm-lock.yaml
+commitlint.config.js
+.vscode
+.husky
+.pnp.js
