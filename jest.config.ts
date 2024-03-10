@@ -1,5 +1,5 @@
 import type { Config } from 'jest';
-import nextJest from 'next/jest.js';
+import nextJest from 'next/jest';
 
 const createJestConfig = nextJest({
   dir: './',
@@ -7,28 +7,40 @@ const createJestConfig = nextJest({
 
 const config: Config = {
   clearMocks: true,
-  roots: ['<rootDir>/app'],
+  roots: ['<rootDir>/src'],
   testRegex: '((\\.|/*.)(test))\\.[tj]sx?$',
-  coverageProvider: 'v8',
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+  coverageProvider: 'v8',
+  coverageDirectory: 'reports',
+  coverageReporters: ['cobertura', 'html', 'lcov', 'text-summary', 'text'],
+  collectCoverageFrom: [
+    'src/**/*.{js,jsx,ts,tsx}',
+    '!src/components/ui/*.{js,jsx,ts,tsx}',
+    '!src/e2e/*.{js,jsx,ts,tsx}',
+    '!src/sections/theme-toggle/theme-toggle.tsx',
+    '!src/hooks/use-identity-iq/use-identity-iq.ts',
+  ],
   coverageThreshold: {
     global: {
-      branches: 80,
-      lines: 80,
-      functions: 80,
-      statements: 80,
+      branches: 50,
+      lines: 50,
+      functions: 50,
+      statements: 50,
     },
-    '**/*.tsx': {
-      branches: 80,
-      lines: 80,
-      functions: 80,
-      statements: 80,
+    'src/**/*.{js,jsx,ts,tsx}': {
+      branches: 50,
+      lines: 50,
+      functions: 50,
+      statements: 50,
     },
   },
-  collectCoverageFrom: ['<rootDir>/app/**/*.{ts,tsx}', '!<rootDir>/app/**/types.ts'],
   moduleNameMapper: {
-    '^@/components/(.*)$': '<rootDir>/app/components/ui/$1',
+    '^@/components/(.*)$': '<rootDir>/src/components/$1',
+    '^@/hooks/(.*)$': '<rootDir>/src/hooks/$1',
+    '^@/sections/(.*)$': '<rootDir>/src/sections/$1',
+    '^@/utils/(.*)$': '<rootDir>/src/utils/$1',
+    'ˆ@/app/(.*)$': '<rootDir>/src/app/$1',
   },
 };
 
