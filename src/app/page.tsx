@@ -25,7 +25,7 @@ function HomePage() {
   return (
     <>
       <div className="flex h-screen w-screen justify-center items-center">
-        <div className="flex h-[80vh] max-w-[80vw] justify-center border p-2 border-violet-700 m-1 relative rounded-md">
+        <div className="flex h-[85vh] max-w-[95vw] justify-center border p-2 border-violet-700 m-1 relative rounded-md">
           <LeftNav />
 
           <VideoCanvas {...{ webCamRef, mirrored, canvasRef }} />

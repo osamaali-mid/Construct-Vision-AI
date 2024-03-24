@@ -7,7 +7,7 @@ import { Separator } from '@/components/ui/separator';
 
 function LeftNav() {
   return (
-    <nav className="relative flex flex-col gap-2 justify-start items-start mt-3 max-w-[6vw]">
+    <nav className="relative flex flex-col gap-2 justify-start items-start mt-3 max-w-28">
       <Image
         src="/logo.png"
         alt="IdentityIQ"
@@ -36,7 +36,11 @@ function LeftNav() {
             <GlobeIcon size={15} /> Website
           </Button>
         </Link>
-        <Link href="https://github.com/amanda-natallie" target="_blank" rel="noopener noreferrer">
+        <Link
+          href="https://github.com/amanda-natallie/identity-iq"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Button variant="outline" size="sm" className="flex gap-2">
             <GithubIcon size={15} /> GitHub
           </Button>
